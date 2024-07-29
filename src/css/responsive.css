@@ -1,0 +1,50 @@
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5f574e;
+}
+
+img {
+    width: 100%;
+}
+
+ul, ol {
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+}
+
+.main {
+    padding: 30px;
+}
+
+.main h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000000;
+}
+
+.main .introdution {
+    margin: 30px 0;
+}
+
+.main .preparation-time {
+    background-color: #fff5fa;
+    padding: 20px;
+}
+
+.main .preparation-time h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+.main .preparation-time ul {
+    list-style-type: square;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.main .preparation-time li span {
+    font-weight: 700;
+}
