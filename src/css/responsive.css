@@ -3,10 +3,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #5f574e;
-}
-
-img {
-    width: 100%;
+    background-color: #fde4e8
 }
 
 ul, ol {
@@ -15,36 +12,121 @@ ul, ol {
     list-style-position: inside;
 }
 
-.main {
-    padding: 30px;
+hr {
+    border: 0;
+    border-top: 1px solid hsl(30, 18%, 87%);
 }
 
-.main h1 {
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+ul li::marker {
+    color: #7b284f;
+    font-size: 10px;
+}
+
+
+
+.main {
+    background-color: #ffffff;
+}
+
+.main .imagem img {
+    width: 100%;
+}
+
+.main .introdution {
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+
+.main .introdution h1 {
     font-family: "Young Serif", serif;
     font-weight: 400;
     line-height: 35px;
     color: #000000;
+    font-size: 36px;
 }
 
-.main .introdution {
-    margin: 30px 0;
+.main .introdution .introdution-text {
+    margin-top: 25px;
 }
 
-.main .preparation-time {
-    background-color: #fff5fa;
+.main .introdution .preparation-time {
+    margin-top: 30px;
     padding: 20px;
+    background-color: #fff5fa;
 }
 
-.main .preparation-time h3 {
+.main .introdution .preparation-time h3 {
     color: hsl(332, 51%, 32%);
 }
 
-.main .preparation-time ul {
-    list-style-type: square;
+.main .introdution .preparation-time ul {
     gap: 10px;
     margin-top: 15px;
 }
 
-.main .preparation-time li span {
+.main .introdution .preparation-time li span {
     font-weight: 700;
+}
+
+.main .ingredients-section {
+    padding: 30px;
+}
+
+
+
+.main .section-titulo {
+    color:  #854632;
+    margin-bottom: 20px;
+}
+.main section ul, .main section ol {
+    gap: 10px;
+}
+
+
+
+.main .instructions-section {
+    padding: 30px;
+}
+.main .instructions-section ol li::marker {
+    color: #7b284f;
+    font-weight: 700;
+}
+
+.main .instructions-section ol li {
+    line-height: 23px;
+}
+
+.main .instructions-section .instruction {
+    font-weight: 700;
+}
+
+.main .nutrition-section {
+    padding: 30px;
+}
+
+.main .nutrition-section .table {
+    margin-top: 30px;
+}
+
+.main .nutrition .table thead th {
+    font-weight: 500;
+}
+
+.main .nutrition .table tbody td {
+    color: #7b284f;
+    font-weight: 700;
+}
+
+.footer .attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }

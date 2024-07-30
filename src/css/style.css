@@ -1,0 +1,19 @@
+@media (min-width: 675px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        max-width: 675px;
+        border-radius: 20px;
+        margin: 100px 0;
+    }
+
+    .main .imagem{
+        padding: 30px;
+    }
+}
