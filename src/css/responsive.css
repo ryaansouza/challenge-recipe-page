@@ -6,29 +6,32 @@ body {
     background-color: #fde4e8
 }
 
-ul, ol {
-    display: flex;
-    flex-direction: column;
-    list-style-position: inside;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid hsl(30, 18%, 87%);
-}
-
 h2 {
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-size: 30px;
 }
 
-ul li::marker {
-    color: #7b284f;
-    font-size: 10px;
+ul, ol {
+    display: flex;
+    flex-direction: column;
+    padding-left: 22px;
+    gap: 10px;
 }
 
+li {
+    padding-left: 15px;
+}
 
+ul li::marker {
+    color: #7b284f;
+    font-size: 13px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid hsl(30, 18%, 87%);
+}
 
 .main {
     background-color: #ffffff;
@@ -49,10 +52,7 @@ ul li::marker {
     line-height: 35px;
     color: #000000;
     font-size: 36px;
-}
-
-.main .introdution .introdution-text {
-    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .main .introdution .preparation-time {
@@ -63,19 +63,11 @@ ul li::marker {
 
 .main .introdution .preparation-time h3 {
     color: hsl(332, 51%, 32%);
-}
-
-.main .introdution .preparation-time ul {
-    gap: 10px;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .main .introdution .preparation-time li span {
     font-weight: 700;
-}
-
-.main .ingredients-section {
-    padding: 30px;
 }
 
 
@@ -84,15 +76,13 @@ ul li::marker {
     color:  #854632;
     margin-bottom: 20px;
 }
-.main section ul, .main section ol {
-    gap: 10px;
-}
 
-
-
-.main .instructions-section {
+.main section {
     padding: 30px;
 }
+
+
+
 .main .instructions-section ol li::marker {
     color: #7b284f;
     font-weight: 700;
@@ -106,21 +96,29 @@ ul li::marker {
     font-weight: 700;
 }
 
-.main .nutrition-section {
-    padding: 30px;
-}
-
 .main .nutrition-section .table {
     margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 50px;
 }
 
-.main .nutrition .table thead th {
-    font-weight: 500;
+.main .nutrition-section .table th {
+    font-weight: 400;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    width: 50%;
+    padding-left: 30px;
 }
 
-.main .nutrition .table tbody td {
+.main .nutrition-section .table td {
     color: #7b284f;
     font-weight: 700;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.main .nutrition-section .table .no-border td, .main .nutrition-section .table .no-border th{
+    border-bottom: none;
 }
 
 .footer .attribution {
